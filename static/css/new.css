@@ -1,0 +1,138 @@
+/************ RESET ****************/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/************ UTILITIES ****************/
+.nowrap {
+    white-space: nowrap;
+}
+
+.offscreen {
+    position: absolute;
+    left: -10000px;
+}
+
+i {
+    padding: .5rem;
+}
+
+/***************** BREAK POINTS ***********************/
+
+/* SMALL */
+@media screen and (min-width: 576px) {}
+
+/* MEDIUM */
+@media screen and (min-width: 768px) {
+    body {
+        max-height: 100%;
+    }
+
+    .logo {
+        float: left;
+        padding: 10px;
+        font-weight: 900;
+        font-size: 1.2rem;
+    }
+
+    .headLineContainer {
+        display: initial;
+        text-align: right;
+        width: 50%;
+    }
+
+    .headLine {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        white-space: nowrap;
+        position: absolute;
+        right: 5%;
+        animation: move 10s linear infinite;
+        opacity: 1;
+    }
+
+    @keyframes move {
+        10% {
+            transform: translateX(5vw);
+            opacity: 1;
+            color: #fffed5;
+            font-size: 25px;
+            padding-bottom: 5px;
+        }
+
+        80% {
+            transform: translateX(-100vw);
+            opacity: 0;
+        }
+    }
+
+    .navigator span {
+        display: initial;
+    }
+
+    .contact span {
+        display: initial;
+    }
+}
+
+/* LARGE */
+@media screen and (min-width: 992px) {
+    .topContainer {
+        border: var(--bgHeader) 5px solid;
+        flex: 0 2;
+        display: flex;
+        flex-flow: row nowrap;
+        /* justify-content: center; */
+    }
+
+    .profilePic {
+        align-content: center;
+        flex: 1 2 20vw;
+        margin: 0px 10px;
+    }
+
+    /* @keyframes bounce {
+
+        0%,
+        100% {
+            transform: translateY(10%);
+        }
+
+        50% {
+            transform: translateY(-10px);
+        }
+    } */
+
+    .profilePic img {
+        padding: 5px;
+        width: 100%;
+        /* Adjust width to the container */
+        height: auto;
+        border: 5px solid var(--bgHeader);
+        border-radius: 50%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0 6px 20px rgba(0, 0, 0, 0.3);
+        /* animation: bounce 3s infinite; */
+        /* Apply the bounce animation */
+    }
+
+    .message {
+        flex: 2 1 80vw;
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 2rem;
+        padding: 1rem;
+    }
+}
+
+/* EXTRA LARGE */
+@media screen and (min-width: 1200px) {}
+
+/* MOBILE DEVICE LANDSCAPE */
+/* @media screen and (max-height: 425px) and (orientation: landscape) {} */

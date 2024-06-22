@@ -1,0 +1,31 @@
+// RESET: padding0, margin0, box-sizingBoderbox
+// UTITLITY:whitespace:nowrap,offscreen{postAbs, left:-10000}, hidden.
+
+// HTML:
+// small screen: fontsize 90 %, fontweight 500
+
+// BODY:
+// large - screen: flex column wrap.
+
+// 	HEADER:flex row wrap, logo: flex1, 2, 20vw, headline: flex2, 1, 80vw
+// small - screen: hide headline.
+
+// 	MAIN: flex column wrap, flexgrow1
+
+// TOP - CONTAINER: flex row wrap.
+// 	IMAGE: flex1, 1, 30vw.
+// 		MESSAGE / GREET: flex column
+// GREET: flex row wrap.
+// 	WAVE: flex2, 1, 70vw
+// RESUME: flex1, 2, 30vw
+// MESSAGE: flex1, 1, 70vw
+
+// BOTTOM - CONTAINER: flex row wrap
+// NAV: flex column wrap flex1, 2, 10vw
+// small - screen:hamburger menu
+// CONTENT: flex2, 1, 80vw
+// small - screen: 100vw
+// CONTACT: flex1, 2, 10vw
+// small - screen: icons only below
+
+// FOOTER: whitespace: no - wrap
