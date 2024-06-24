@@ -35,23 +35,20 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"><i
+                            <a class="nav-link active" aria-current="page" href="#biography"><i
                                     class="fa-solid fa-book-atlas"></i>Biography</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa-solid fa-briefcase"></i>Portfolio</a>
+                            <a class="nav-link" href="#portfolio"><i class="fa-solid fa-briefcase"></i>Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa-regular fa-window-maximize"></i>Blogs</a>
+                            <a class="nav-link" href="#blog"><i class="fa-regular fa-window-maximize"></i>Blogs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa-solid fa-screwdriver-wrench"></i>Skillset</a>
+                            <a class="nav-link" href="#skill"><i class="fa-solid fa-screwdriver-wrench"></i>Skillset</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa-solid fa-reply"></i>Reviews</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa-solid fa-heart"></i>Favourites</a>
+                            <a class="nav-link" href="#review"><i class="fa-solid fa-reply"></i>Reviews</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -86,6 +83,9 @@
                             </ul>
                         </li>
                     </ul>
+                    <div class="d-flex hire">
+                        <a class="nav-link me-2" href="#hire"><i class="fa-solid fa-handshake-simple"></i>Hire Me</a>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -93,647 +93,609 @@
 
     <!-- Main Section -->
     <main d-flex flex-column>
-        <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center">
-            <figure class="figure">
-                <img src="static/images/hero.png" class="figure-img img-fluid rounded mt-4" alt="Profile Picture"
-                    width="600" height="600">
-                <figcaption class="offscreen">
-                    Adeshina Ibrahim
-                </figcaption>
-            </figure>
-            <div class="message">
-                <div class="wave">
-                    Hey! 👋, I am <span class="name nowrap"> Adeshina Ibrahim</span>
-                    <a target="_blank" href="https://www.google.com"><button class="resume nowrap">Download
-                            CV</button></a>
-                    <br>
-                </div>
-                <p>A Software Engineer at Alx Africa. I bridge the gap between problem & solution, ideas &
-                    implementation, and figures & decisions. With big data, Artificial intelligence,
-                    and machine learning technologies, I process voluminous text and audio <span
-                        class="skill">(NLP)</span>,
-                    images, and videos <span class="skill">(image processing)</span> to extract reliable facts and
-                    estimable
-                    decisions. I have a strong
-                    technical academic background in computer science, statistics and other relevant skillsets like
-                    <span class="skill">Database Management</span>, <span class="skill">Python programming</span>
-                    (Numpy,
-                    Scipy, Pandas), <span class="skill">Web scrapping</span>
-                    (Beautiful Soup, Scrapy, Request, Selenium) <span class="skill">Machine learning and Deep
-                        Learning</span> (Tensorflow, PyTorch, Keras, and SciKit-learn).
-                    I am highly dedicated to continuous learning and adapting to emerging technologies in the dynamic
-                    field
-                    of data science and machine learning. Let's connect and explore opportunities to collaborate on
-                    innovative projects!
-                </p>
-            </div>
-        </div>
-        <div class="bottomContainer">
-            <div class="navigator">
-                <h2><span class="hidden">Navigator</span></h2>
-                <div class="navs">
-                    <div class="nav active" data-id="nav1"><i class="fa-solid fa-address-card"></i><span
-                            class="hidden">Biography</span>
+        <!-- Top Container -->
+        <article>
+            <section class="d-flex flex-column flex-lg-row justify-content-center align-items-center">
+                <figure class="figure">
+                    <img src="static/images/hero.png" class="figure-img img-fluid mt-3" alt="Profile Picture"
+                        width="600" height="600">
+                    <figcaption class="offscreen">
+                        Adeshina Ibrahim
+                    </figcaption>
+                </figure>
+                <div class="message">
+                    <div class="wave">
+                        Hey! 👋, I am <span class="name nowrap"> Adeshina Ibrahim</span>
+                        <a>
+                            <!-- <button class="resume nowrap">Download
+                                CV</button> -->
+                            <a target="_blank"
+                                href="https://drive.google.com/file/d/1oplFHdUafUFmV3nx35MSO_tx24tzv6V0/view?usp=sharing"
+                                download type="button" class="btn btn-outline-bgHeader resume">Download Resume <i
+                                    class="fa-solid fa-download"></i></a>
+                        </a>
+                        <br>
                     </div>
-                    <div class="nav" data-id="nav2"><i class="fa-solid fa-briefcase"></i><span
-                            class="hidden">Portfolio</span></div>
-                    <div class="nav" data-id="nav3"><i class="fa-regular fa-window-maximize"></i><span
-                            class="hidden">Blogs</span>
-                    </div>
-                    <div class="nav" data-id="nav4"><i class="fa-solid fa-screwdriver-wrench"></i><span
-                            class="hidden">Skillset</span>
-                    </div>
-                    <div class="nav" data-id="nav5"><i class="fa-solid fa-reply"></i><span class="hidden">Reviews</span>
-                    </div>
-                    <div class="nav" data-id="nav6"><i class="fa-solid fa-heart"></i><span
-                            class="hidden">Favourite</span> </div>
-                </div>
-            </div>
-            <div class="contents">
-                <h2>Now showing: <span>Content</span></h2>
-                <div id="nav1" class="content">
-                    <section class="education">
-                        <div class="subheading">Education</div>
-                        <p><strong>Computer Science:</strong> Al-Hikmah University, Kwara State, Nigeria (BSc, Oct
-                            2021 - Nov 2023)
-                        </p>
-
-                        <p><strong>Higher National Diploma in Pure Statistics:</strong> Federal Polytechnic Ede,
-                            Osun State, Nigeria
-                            (Distinction, Sep 2017 - Oct 2019)</p>
-                        <p><strong>Diploma in Statistics:</strong> Federal Polytechnic Ede, Osun State, Nigeria
-                            (Distinction, Nov 2012 - Aug 2015)</p>
-                        <p><strong>Higher School Certificate:</strong> Aperin Boys’ High School, Oyo State, Nigeria
-                            (Feb 2004 - May 2010)</p>
-
-                    </section>
-
-                    <section class="experience">
-                        <div class="subheading">Experience</div>
-                        <p><strong>Software Engineer:</strong> ALX Africa (Remote, Aug 2023 – Present)</p>
-                        <p><strong>Information Technologist:</strong> Polytechnic Ede, Osun State, Nigeria (2022 –
-                            Present)</p>
-                        <p><strong>Data Science Teaching Assistance:</strong> Polytechnic Ede, Osun State, Nig (Dec 2020
-                            – Dec
-                            2021)</p>
-                        <p><strong>Data Scientist (Intern):</strong> Forage (Remote, Nov 2022)</p>
-                        <p><strong>Software Engineer:</strong> FountainAI Consult (Freelance, Aug 2021 – Present)</p>
-                    </section>
-
-                    <section class="certifications">
-                        <div class="subheading">Certifications</div>
-                        <p>ALX Africa Full Stack Software Engineering (Backend Specialization)</p>
-                        <p>Machine Learning in Python, 365 Data Science</p>
-                        <p>DeepLearning.AI TensorFlow Developer Specialization</p>
-                        <p>IBM Back-End Development Professional Certificate</p>
-                    </section>
-
-                    <section class="publications">
-                        <div class="subheading">Research & Publications</div>
-                        <p>Multicollinearity Regularization Using Lasso and Ridge Regression on Economic (2021)</p>
-                        <p>Analysis of Students' Academic Performance Using Traditional and Machine Learning
-                            Classifiers (2021)</p>
-                    </section>
-                </div>
-                <div id="nav2" class="content hidden">
-                    <div class="panels">
-                        <ul class="panel-tabs">
-                            <button class="tab active-tab" data-class="fs">FullStack Apps</button>
-                            <button class="tab" data-class="dl">ML/DL</button>
-                            <button class="tab" data-class="ds">Data Science</button>
-                        </ul>
-                    </div>
-                    <div class="portalContainer">
-                        <div class="frame fs">
-                            <div class="preview">
-                                <img src="static/images/Blog/css tricks flexbox.jpg"
-                                    alt="Most important CSS flexbox tricks" class="previewImg">
-                                <span class="previewTitle hidden"></span>
-                            </div>
-                            <div class="linker">
-                                <div class="loom"><i class="fa-solid fa-video"></i><span class="toolTipText"></span>
-                                </div>
-                                <div class="git"><i class="fa-brands fa-github"></i><span class="toolTipText"></span>
-                                </div>
-                                <div class="blog"><i class="fa-regular fa-window-maximize"></i><span
-                                        class="toolTipText"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="frame fs">
-                            <div class="preview"></div>
-                            <div class="linker">
-                                <div class="loom"><i class="fa-solid fa-video"></i><span class="toolTipText"></span>
-                                </div>
-                                <div class="git"><i class="fa-brands fa-github"></i><span class="toolTipText"></span>
-                                </div>
-                                <div class="blog"><i class="fa-regular fa-window-maximize"></i><span
-                                        class="toolTipText"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="frame fs">
-                            <div class="preview"></div>
-                            <div class="linker">
-                                <div class="loom"><i class="fa-solid fa-video"></i><span class="toolTipText"></span>
-                                </div>
-                                <div class="git"><i class="fa-brands fa-github"></i><span class="toolTipText"></span>
-                                </div>
-                                <div class="blog"><i class="fa-regular fa-window-maximize"></i><span
-                                        class="toolTipText"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="frame dl">
-                            <div class="preview"></div>
-                            <div class="linker">
-                                <div class="loom"><i class="fa-solid fa-video"></i><span class="toolTipText"></span>
-                                </div>
-                                <div class="git"><i class="fa-brands fa-github"></i><span class="toolTipText"></span>
-                                </div>
-                                <div class="blog"><i class="fa-regular fa-window-maximize"></i><span
-                                        class="toolTipText"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="frame dl">
-                            <div class="preview"></div>
-                            <div class="linker">
-                                <div class="loom"><i class="fa-solid fa-video"></i><span class="toolTipText"></span>
-                                </div>
-                                <div class="git"><i class="fa-brands fa-github"></i><span class="toolTipText"></span>
-                                </div>
-                                <div class="blog"><i class="fa-regular fa-window-maximize"></i><span
-                                        class="toolTipText"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="frame dl">
-                            <div class="preview"></div>
-                            <div class="linker">
-                                <div class="loom"><i class="fa-solid fa-video"></i><span class="toolTipText"></span>
-                                </div>
-                                <div class="git"><i class="fa-brands fa-github"></i><span class="toolTipText"></span>
-                                </div>
-                                <div class="blog"><i class="fa-regular fa-window-maximize"></i><span
-                                        class="toolTipText"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="frame dl">
-                            <div class="preview"></div>
-                            <div class="linker">
-                                <div class="loom"><i class="fa-solid fa-video"></i><span class="toolTipText"></span>
-                                </div>
-                                <div class="git"><i class="fa-brands fa-github"></i><span class="toolTipText"></span>
-                                </div>
-                                <div class="blog"><i class="fa-regular fa-window-maximize"></i><span
-                                        class="toolTipText"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="frame ds">
-                            <div class="preview"></div>
-                            <div class="linker">
-                                <div class="loom"><i class="fa-solid fa-video"></i><span class="toolTipText"></span>
-                                </div>
-                                <div class="git"><i class="fa-brands fa-github"></i><span class="toolTipText"></span>
-                                </div>
-                                <div class="blog"><i class="fa-regular fa-window-maximize"></i><span
-                                        class="toolTipText"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="frame ds">
-                            <div class="preview"></div>
-                            <div class="linker">
-                                <div class="loom"><i class="fa-solid fa-video"></i><span class="toolTipText"></span>
-                                </div>
-                                <div class="git"><i class="fa-brands fa-github"></i><span class="toolTipText"></span>
-                                </div>
-                                <div class="blog"><i class="fa-regular fa-window-maximize"></i><span
-                                        class="toolTipText"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="frame ds">
-                            <div class="preview"></div>
-                            <div class="linker">
-                                <div class="loom"><i class="fa-solid fa-video"></i><span class="toolTipText"></span>
-                                </div>
-                                <div class="git"><i class="fa-brands fa-github"></i><span class="toolTipText"></span>
-                                </div>
-                                <div class="blog"><i class="fa-regular fa-window-maximize"></i><span
-                                        class="toolTipText"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="frame ds">
-                            <div class="preview"></div>
-                            <div class="linker">
-                                <div class="loom"><i class="fa-solid fa-video"></i><span class="toolTipText"></span>
-                                </div>
-                                <div class="git"><i class="fa-brands fa-github"></i><span class="toolTipText"></span>
-                                </div>
-                                <div class="blog"><i class="fa-regular fa-window-maximize"></i><span
-                                        class="toolTipText"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="frame ds">
-                            <div class="preview"></div>
-                            <div class="linker">
-                                <div class="loom"><i class="fa-solid fa-video"></i><span class="toolTipText"></span>
-                                </div>
-                                <div class="git"><i class="fa-brands fa-github"></i><span class="toolTipText"></span>
-                                </div>
-                                <div class="blog"><i class="fa-regular fa-window-maximize"></i><span
-                                        class="toolTipText"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="nav3" class="content hidden">
-                    <div class="panels">
-                        <ul class="panel-tabs">
-                            <button class="tab active-tab" data-class="fs">FullStack Apps</button>
-                            <button class="tab" data-class="dl">ML/DL</button>
-                            <button class="tab" data-class="ds">Data Science</button>
-                        </ul>
-                    </div>
-                    <div class="blogContainer">
-                        <div class="blogFrame fs">
-                            <div class="preview">
-                                <img src="static/images/Blog/css tricks flexbox.jpg"
-                                    alt="Most important CSS flexbox tricks" class="previewImg">
-                                <span class="previewTitle hidden"></span>
-                            </div>
-                            <div class="linker">
-                                <div class="git" name="Code"><i class="fa-brands fa-github"></i><a
-                                        href="https://github.com/thomaspark/flexboxfroggy" target="_blank"><span
-                                            class="toolTipText"></span></a>
-                                </div>
-                                <div class="blog" name="Blog"><i class="fa-regular fa-window-maximize"></i>
-                                    <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
-                                        target="_blank"><span class="toolTipText"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="blogFrame fs">
-                            <div class="preview">
-                                <img src="static/images/Blog/You-Dont-Know-JS.jpg" alt="You-Dont-Know-JS"
-                                    class="previewImg">
-                                <span class="previewTitle hidden"></span>
-                            </div>
-                            <div class="linker">
-                                <div class="git" name="Code"><i class="fa-brands fa-github"></i><a
-                                        href="https://github.com/getify/You-Dont-Know-JS" target="_blank"><span
-                                            class="toolTipText"></span></a>
-                                </div>
-                                <div class="blog" name="Blog"><i class="fa-regular fa-window-maximize"></i>
-                                    <a href="https://coderanch.com/t/663355/languages/Don-JS-series-order"
-                                        target="_blank"><span class="toolTipText"></span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="blogFrame fs">
-                            <div class="preview">
-                                <img src="static/images/Blog/puppet.jpg" alt="Puppet for server automation"
-                                    class="previewImg">
-                                <span class="previewTitle hidden"></span>
-                            </div>
-                            <div class="linker">
-                                <div class="git" name="Code"><i class="fa-brands fa-github"></i><a
-                                        href="https://github.com/Element84/puppet-docs/tree/master"
-                                        target="_blank"><span class="toolTipText"></span></a>
-                                </div>
-                                <div class="blog" name="Blog"><i class="fa-regular fa-window-maximize"></i>
-                                    <a href="https://www.puppet.com/docs/puppet/5.5/cheatsheet_core_types.html"
-                                        target="_blank"><span class="toolTipText"></span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="blogFrame fs">
-                            <div class="preview">
-                                <img src="static/images/Blog/You-Dont-Know-JS.jpg" alt="You-Dont-Know-JS"
-                                    class="previewImg">
-                                <span class="previewTitle hidden"></span>
-                            </div>
-                            <div class="linker">
-                                <div class="git" name="Code"><i class="fa-brands fa-github"></i><a
-                                        href="https://github.com/getify/You-Dont-Know-JS" target="_blank"><span
-                                            class="toolTipText"></span></a>
-                                </div>
-                                <div class="blog" name="Blog"><i class="fa-regular fa-window-maximize"></i>
-                                    <a href="https://coderanch.com/t/663355/languages/Don-JS-series-order"
-                                        target="_blank"><span class="toolTipText"></span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="blogFrame dl">
-                            <div class="preview">
-                                <img src="static/images/Blog/css tricks flexbox.jpg" alt="CSS FLEXBOX"
-                                    class="previewImg">
-                                <span class="previewTitle hidden"></span>
-                            </div>
-                            <div class="linker">
-                                <div class="git" name="Code"><i class="fa-brands fa-github"></i><a
-                                        href="https://github.com/thomaspark/flexboxfroggy" target="_blank"><span
-                                            class="toolTipText"></span></a>
-                                </div>
-                                <div class="blog" name="Blog"><i class="fa-regular fa-window-maximize"></i>
-                                    <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
-                                        target="_blank"><span class="toolTipText"></span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="blogFrame dl">
-                            <div class="preview">
-                                <img src="static/images/Blog/You-Dont-Know-JS.jpg" alt="You-Dont-Know-JS"
-                                    class="previewImg">
-                                <span class="previewTitle hidden"></span>
-                            </div>
-                            <div class="linker">
-                                <div class="git" name="Code"><i class="fa-brands fa-github"></i><a
-                                        href="https://github.com/getify/You-Dont-Know-JS" target="_blank"><span
-                                            class="toolTipText"></span></a>
-                                </div>
-                                <div class="blog" name="Blog"><i class="fa-regular fa-window-maximize"></i>
-                                    <a href="https://coderanch.com/t/663355/languages/Don-JS-series-order"
-                                        target="_blank"><span class="toolTipText"></span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="blogFrame dl">
-                            <div class="preview">
-                                <img src="static/images/Blog/puppet.jpg" alt="You-Dont-Know-JS" class="previewImg">
-                                <span class="previewTitle hidden"></span>
-                            </div>
-                            <div class="linker">
-                                <div class="git" name="Code"><i class="fa-brands fa-github"></i><a
-                                        href="https://github.com/Element84/puppet-docs/tree/master"
-                                        target="_blank"><span class="toolTipText"></span></a>
-                                </div>
-                                <div class="blog" name="Blog"><i class="fa-regular fa-window-maximize"></i>
-                                    <a href="https://www.puppet.com/docs/puppet/5.5/cheatsheet_core_types.html"
-                                        target="_blank"><span class="toolTipText"></span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="blogFrame ds">
-                            <div class="preview">
-                                <img src="static/images/Blog/css tricks flexbox.jpg" alt="CSS FLEXBOX"
-                                    class="previewImg">
-                                <span class="previewTitle hidden"></span>
-                            </div>
-                            <div class="linker">
-                                <div class="git" name="Code"><i class="fa-brands fa-github"></i><a
-                                        href="https://github.com/thomaspark/flexboxfroggy" target="_blank"><span
-                                            class="toolTipText"></span></a>
-                                </div>
-                                <div class="blog" name="Blog"><i class="fa-regular fa-window-maximize"></i>
-                                    <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
-                                        target="_blank"><span class="toolTipText"></span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="blogFrame ds">
-                            <div class="preview">
-                                <img src="static/images/Blog/You-Dont-Know-JS.jpg" alt="You-Dont-Know-JS"
-                                    class="previewImg">
-                                <span class="previewTitle hidden"></span>
-                            </div>
-                            <div class="linker">
-                                <div class="git" name="Code"><i class="fa-brands fa-github"></i><a
-                                        href="https://github.com/getify/You-Dont-Know-JS" target="_blank"><span
-                                            class="toolTipText"></span></a>
-                                </div>
-                                <div class="blog" name="Blog"><i class="fa-regular fa-window-maximize"></i>
-                                    <a href="https://coderanch.com/t/663355/languages/Don-JS-series-order"
-                                        target="_blank"><span class="toolTipText"></span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="blogFrame ds">
-                            <div class="preview">
-                                <img src="static/images/Blog/puppet.jpg" alt="You-Dont-Know-JS" class="previewImg">
-                                <span class="previewTitle hidden"></span>
-                            </div>
-                            <div class="linker">
-                                <div class="git" name="Code"><i class="fa-brands fa-github"></i><a
-                                        href="https://github.com/Element84/puppet-docs/tree/master"
-                                        target="_blank"><span class="toolTipText"></span></a>
-                                </div>
-                                <div class="blog" name="Blog"><i class="fa-regular fa-window-maximize"></i>
-                                    <a href="https://www.puppet.com/docs/puppet/5.5/cheatsheet_core_types.html"
-                                        target="_blank"><span class="toolTipText"></span>
-                                </div></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="nav4" class="content hidden">
-                    <div>
-                        <p>While I keep improving my skills on daily basis, below are the list of technologies that
-                            I
-                            work with currently:</p>
-                    </div>
-                    <div class="tech">
-                        <div class="tech1 tech-rack"><i class='bx bxl-html5'></i><span>HTML</span></div>
-                        <div class="tech2 tech-rack"><i class='bx bxl-css3'></i><span>CSS</span> </div>
-                        <div class="tech3 tech-rack"><i class='bx bxl-javascript'></i><span>JavaScript</span> </div>
-                        <div class="tech4 tech-rack"><i class='bx bxl-python'></i><span>Python</span> </div>
-                        <div class="tech5 tech-rack"><i class='bx bxl-flask'></i><span>Flask</span> </div>
-                        <div class="tech6 tech-rack"><i class='bx bxl-django'></i><span>Django</span> </div>
-                        <div class="tech7 tech-rack"><i class='bx bxl-nodejs'></i><span>NodeJs</span> </div>
-                        <div class="tech8 tech-rack"><i class='bx bxl-react'></i><span>React</span> </div>
-                        <div class="tech9 tech-rack"><i class='bx bxl-typescript'></i><span>TypeScript</span> </div>
-                        <div class="tech10 tech-rack"><i class='bx bxl-kubernetes'></i></i><span>Kubernetes</span>
-                        </div>
-                        <div class="tech11 tech-rack"><i class='bx bxl-docker'></i></i><span>Docker</span> </div>
-                        <div class="tech12 tech-rack"><i class='bx bxl-graphql'></i><span>Graphql</span> </div>
-                    </div>
-                    <p class="implementation">
-                        As a seasoned software engineer, I specialize in both front-end and back-end development
-                        with expertise in HTML, CSS,
-                        JavaScript, React, and TypeScript for creating dynamic, user-friendly interfaces. On the
-                        server side, I leverage Python
-                        with Flask and Django, as well as Node.js and GraphQL, to build robust, scalable APIs. My
-                        proficiency in Docker and
-                        Kubernetes ensures efficient deployment and scaling of applications, enhancing overall
-                        system resilience and delivery
-                        speed. In my current role, I integrate these skills to develop comprehensive web
-                        applications, streamline workflows, and
-                        deliver high-quality, innovative solutions, while maintaining a strong commitment to
-                        continuous learning and
-                        improvement.
+                    <p>A Software Engineer at Alx Africa. I bridge the gap between problem & solution, ideas &
+                        implementation, and figures & decisions. With big data, Artificial intelligence,
+                        and machine learning technologies, I process voluminous text and audio <span
+                            class="skill">(NLP)</span>,
+                        images, and videos <span class="skill">(image processing)</span> to extract reliable facts and
+                        estimable
+                        decisions. I have a strong
+                        technical academic background in computer science, statistics and other relevant skillsets like
+                        <span class="skill">Database Management</span>, <span class="skill">Python programming</span>
+                        (Numpy,
+                        Scipy, Pandas), <span class="skill">Web scrapping</span>
+                        (Beautiful Soup, Scrapy, Request, Selenium) <span class="skill">Machine learning and Deep
+                            Learning</span> (Tensorflow, PyTorch, Keras, and SciKit-learn).
+                        I am highly dedicated to continuous learning and adapting to emerging technologies in the
+                        dynamic
+                        field
+                        of data science and machine learning. Let's connect and explore opportunities to collaborate on
+                        innovative projects!
                     </p>
                 </div>
-                <div id="nav5" class="content hidden">
-                    <div class="reviewContainer">
-                        <div class="reviewFrame">
-                            <div class="review">
-                                <div><img class="img-l" src="static/images/edgar1.jpg" alt="client Image"></div>
-                                <p>
-                                    Their expertise
-                                    and attention to detail were evident in every aspect of the project. From the
-                                    initial consultation to the final
-                                    deployment, they demonstrated a deep understanding of modern web technologies and
-                                    best practices. <strong>&#8212; &#8220; <span>Edgar Smith</span> &#8221;
-                                        &nbsp; <span class="fi fi-de"></span></strong>
-                                </p>
-                            </div>
-                            <div class="review">
-                                <div><img class="img-l" src="static/images/ds1.jpg" alt="client Image"></div>
-                                <p>
-                                    Their communication was top-notch, and they were always available to answer my
-                                    questions and implement my feedback. The
-                                    project was completed on time and within budget. I am extremely satisfied with the
-                                    service and would definitely hire
-                                    them again for future web development projects. <strong>&#8212; &#8220; Adeyemi
-                                        Taofeeq
-                                        &#8221;
-                                        &nbsp; <span class="fi fi-gb"></span></strong>
-                                </p>
-                            </div>
+            </section>
+        </article>
+        <!-- Bottom Container -->
+
+        <!-- Biography -->
+        <article class="columns scroll-section" id="biography">
+            <div id="biography">
+                <ul class="education">
+                    <div class="subheading">Education</div>
+                    <li><strong>Computer Science:</strong> Al-Hikmah University, Kwara State, Nigeria (BSc, Oct
+                        2021 - Nov 2023)
+                    </li>
+
+                    <li><strong>Higher National Diploma in Pure Statistics:</strong> Federal Polytechnic Ede,
+                        Osun State, Nigeria
+                        (Distinction, Sep 2017 - Oct 2019)</li>
+                    <li><strong>Diploma in Statistics:</strong> Federal Polytechnic Ede, Osun State, Nigeria
+                        (Distinction, Nov 2012 - Aug 2015)</li>
+                    <li><strong>Higher School Certificate:</strong> Aperin Boys’ High School, Oyo State, Nigeria
+                        (Feb 2004 - May 2010)</li>
+
+                </ul>
+
+                <ul class="experience">
+                    <div class="subheading">Experience</div>
+                    <li><strong>Automation Engineer:</strong> Alphakhom, Munich, Germany (Mar 2024 – Present)</li>
+                    <li><strong>Software Engineer:</strong> ALX Africa, Nairobi, Kenya (Aug 2023 – May 2024)</li>
+                    <li><strong>Software Engineer:</strong> FountainAI Consult, Lagos, Nigeria (Sep 2021 – July 2023)
+                    </li>
+                    <li><strong>Information Technologist:</strong> Federal Polytechnic Ede, Osun, Nigeria (Dec 2019 –
+                        Aug 2021)</li>
+                </ul>
+
+
+                <ul class="certifications">
+                    <div class="subheading">Certifications</div>
+                    <li><strong>Software Engineering:</strong>ALX Africa Full Stack Software Engineering (Backend
+                        Specialization)</li>
+                    <li><strong>ML/AI:</strong>Machine Learning in Python, 365 Data Science</li>
+                    <li><strong>ML/AI:</strong>DeepLearning.AI TensorFlow Developer Specialization</li>
+                    <li><strong>Web Dev:</strong>IBM Back-End Development Professional Certificate</li>
+                </ul>
+
+                <ul class="publications">
+                    <div class="subheading">Research & Publications</div>
+                    <li><strong>Machine Learning: </strong>Multicollinearity Regularization Using Lasso and Ridge
+                        Regression on Economic (2021)</li>
+                    <li><strong>Machine Learning: </strong>Analysis of Students' Academic Performance Using Traditional
+                        and
+                        Machine Learning
+                        Classifiers (2021)</li>
+                    <li><strong>Statistics: </strong>Comparative Study of Memory Type Control Chat On Covid-19 New Cases
+                        Detection (2024)</li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- Portfolio -->
+        <article class="scroll-section" id="portfolio">
+            <div class="panels">
+                <ul class="panel-tabs">
+                    <button class="tab active-tab" data-class="fs">FullStack Apps</button>
+                    <button class="tab" data-class="dl">ML/DL</button>
+                    <button class="tab" data-class="ds">Data Science</button>
+                </ul>
+            </div>
+            <div class="kontainer">
+                <div class="frame fs">
+                    <div class="preview">
+                        <img src="static/images/Blog/css tricks flexbox.jpg" alt="Most important CSS flexbox tricks"
+                            class="previewImg">
+                        <span class="previewTitle hidden"></span>
+                    </div>
+                    <div class="linker">
+                        <div class="loom"><i class="fa-solid fa-video"></i><span class="toolTipText"></span>
                         </div>
-                        <div class="reviewFrame">
-                            <div class="review">
-                                <div><img class="img-l" src="static/images/need help.jpg" alt="client Image"></div>
-                                <p>
-                                    The developer created a cutting-edge app that not only met all my specifications but
-                                    also included innovative features I
-                                    hadn't thought of. Their expertise in the latest technologies and user experience
-                                    design was impressive, and they were
-                                    always open to feedback and suggestions. <strong>&#8212; &#8220; <span>Qk
-                                            Zalmi</span> &#8221;
-                                        &nbsp; <span class="fi fi-pk"></span></strong>
-                                </p>
-                            </div>
-                            <div class="review">
-                                <div><img class="img-l" src="static/images/saleem.jpg" alt="client Image"></div>
-                                <p>
-                                    They delivered a high-quality, intuitive app that surpassed my expectations. The
-                                    development process was smooth, and
-                                    they were very communicative. Their ability to integrate
-                                    advanced functionalities seamlessly
-                                    into the app was particularly impressive. <strong>&#8212; &#8220; Saleem Anwar
-                                        &#8221;
-                                        &nbsp; <span class="fi fi-au"></span></strong>
-                                </p>
-                            </div>
+                        <div class="git"><i class="fa-brands fa-github"></i><span class="toolTipText"></span>
                         </div>
-                        <div class="reviewFrame">
-                            <div class="review">
-                                <div><img class="img-l" src="static/images/teresti.jpg" alt="client Image"></div>
-                                <p>
-                                    The team brought a high level of expertise in machine learning, which helped us
-                                    uncover
-                                    valuable insights from our data. Their ability to translate complex data into
-                                    actionable strategies was impressive and
-                                    has a significant impact on our decision-making processes. <strong>&#8212;
-                                        &#8220; <span>Myriam Teresti</span> &#8221;
-                                        &nbsp; <span class="fi fi-fr"></span></strong>
-                                </p>
-                            </div>
-                            <div class="review">
-                                <div><img class="img-l" src="static/images/dad.jpg" alt="client Image"></div>
-                                <p>
-                                    They were able to analyze large datasets and provide detailed reports that
-                                    highlighted key trends and patterns critical
-                                    to our business operations. Their work was meticulous, and they were always
-                                    available to explain the findings and answer
-                                    any questions. <strong>&#8212; &#8220; Lukumon Adewale &#8221;
-                                        &nbsp; <span class="fi fi-us"></span></strong>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="reviewFrame">
-                            <div class="review">
-                                <div><img class="img-l" src="static/images/polyska1.jpg" alt="client Image"></div>
-                                <p>
-                                    They demonstrated a profound understanding of complex statistical methods and were
-                                    able to explain the results in a
-                                    clear and concise manner. Their work significantly enhanced the quality of my
-                                    research, and their detailed report made
-                                    the review process much smoother. <strong>&#8212; &#8220; <span>Suzanna
-                                            Polyanska</span>
-                                        &#8221;
-                                        &nbsp; <span class="fi fi-my"></span></strong>
-                                </p>
-                            </div>
-                            <div class="review">
-                                <div><img class="img-l" src="static/images/asekun1.jpg" alt="client Image"></div>
-                                <p>
-                                    The analyst was highly knowledgeable, meticulous, and responsive. They provided
-                                    insightful interpretations of the data,
-                                    which greatly enriched my dissertation. <strong>&#8212; &#8220; Ajibola Asekun
-                                        &#8221;
-                                        &nbsp; <span class="fi fi-ng"></span></strong>
-                                </p>
-                            </div>
+                        <div class="blog"><i class="fa-regular fa-window-maximize"></i><span class="toolTipText"></span>
                         </div>
                     </div>
                 </div>
-                <div id="nav6" class="content hidden">
-                    <div class="imageContainer">
-                        <ul class="images">
-                            <li class="favImg"><img src="static/images/favourites/1.jpg" alt="image 1" width="400"
-                                    height="400"></li>
-                            <li class="favImg"><img src="static/images/favourites/2.jpg" alt="image 2" width="400"
-                                    height="400"></li>
-                            <li class="favImg"><img src="static/images/favourites/3.jpg" alt="image 3" width="400"
-                                    height="400"></li>
-                            <li class="favImg"><img src="static/images/favourites/4.jpg" alt="image 4" width="400"
-                                    height="400"></li>
-                            <li class="favImg"><img src="static/images/favourites/5.jpg" alt="image 5" width="400"
-                                    height="400"></li>
-                            <li class="favImg"><img src="static/images/favourites/7.JPG" alt="image 7" width="400"
-                                    height="400"></li>
-                            <li class="favImg"><img src="static/images/favourites/8.jpg" alt="image 8" width="400"
-                                    height="400"></li>
-                            <li class="favImg"><img src="static/images/favourites/9.jpg" alt="image 9" width="400"
-                                    height="400"></li>
-                            <li class="favImg"><img src="static/images/favourites/10.jpeg" alt="image 10" width="400"
-                                    height="400"></li>
-                            <li class="favImg"><img src="static/images/favourites/11.jpg" alt="image 11" width="400"
-                                    height="400"></li>
-                            <li class="favImg"><img src="static/images/favourites/12.jpg" alt="image 12" width="400"
-                                    height="400"></li>
-                            <li class="favImg"><img src="static/images/favourites/13.jpg" alt="image 13" width="400"
-                                    height="400"></li>
-                        </ul>
+                <div class="frame fs">
+                    <div class="preview"></div>
+                    <div class="linker">
+                        <div class="loom"><i class="fa-solid fa-video"></i><span class="toolTipText"></span>
+                        </div>
+                        <div class="git"><i class="fa-brands fa-github"></i><span class="toolTipText"></span>
+                        </div>
+                        <div class="blog"><i class="fa-regular fa-window-maximize"></i><span class="toolTipText"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="frame fs">
+                    <div class="preview"></div>
+                    <div class="linker">
+                        <div class="loom"><i class="fa-solid fa-video"></i><span class="toolTipText"></span>
+                        </div>
+                        <div class="git"><i class="fa-brands fa-github"></i><span class="toolTipText"></span>
+                        </div>
+                        <div class="blog"><i class="fa-regular fa-window-maximize"></i><span class="toolTipText"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="frame dl">
+                    <div class="preview"></div>
+                    <div class="linker">
+                        <div class="loom"><i class="fa-solid fa-video"></i><span class="toolTipText"></span>
+                        </div>
+                        <div class="git"><i class="fa-brands fa-github"></i><span class="toolTipText"></span>
+                        </div>
+                        <div class="blog"><i class="fa-regular fa-window-maximize"></i><span class="toolTipText"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="frame dl">
+                    <div class="preview"></div>
+                    <div class="linker">
+                        <div class="loom"><i class="fa-solid fa-video"></i><span class="toolTipText"></span>
+                        </div>
+                        <div class="git"><i class="fa-brands fa-github"></i><span class="toolTipText"></span>
+                        </div>
+                        <div class="blog"><i class="fa-regular fa-window-maximize"></i><span class="toolTipText"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="frame dl">
+                    <div class="preview"></div>
+                    <div class="linker">
+                        <div class="loom"><i class="fa-solid fa-video"></i><span class="toolTipText"></span>
+                        </div>
+                        <div class="git"><i class="fa-brands fa-github"></i><span class="toolTipText"></span>
+                        </div>
+                        <div class="blog"><i class="fa-regular fa-window-maximize"></i><span class="toolTipText"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="frame dl">
+                    <div class="preview"></div>
+                    <div class="linker">
+                        <div class="loom"><i class="fa-solid fa-video"></i><span class="toolTipText"></span>
+                        </div>
+                        <div class="git"><i class="fa-brands fa-github"></i><span class="toolTipText"></span>
+                        </div>
+                        <div class="blog"><i class="fa-regular fa-window-maximize"></i><span class="toolTipText"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="frame ds">
+                    <div class="preview"></div>
+                    <div class="linker">
+                        <div class="loom"><i class="fa-solid fa-video"></i><span class="toolTipText"></span>
+                        </div>
+                        <div class="git"><i class="fa-brands fa-github"></i><span class="toolTipText"></span>
+                        </div>
+                        <div class="blog"><i class="fa-regular fa-window-maximize"></i><span class="toolTipText"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="frame ds">
+                    <div class="preview"></div>
+                    <div class="linker">
+                        <div class="loom"><i class="fa-solid fa-video"></i><span class="toolTipText"></span>
+                        </div>
+                        <div class="git"><i class="fa-brands fa-github"></i><span class="toolTipText"></span>
+                        </div>
+                        <div class="blog"><i class="fa-regular fa-window-maximize"></i><span class="toolTipText"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="frame ds">
+                    <div class="preview"></div>
+                    <div class="linker">
+                        <div class="loom"><i class="fa-solid fa-video"></i><span class="toolTipText"></span>
+                        </div>
+                        <div class="git"><i class="fa-brands fa-github"></i><span class="toolTipText"></span>
+                        </div>
+                        <div class="blog"><i class="fa-regular fa-window-maximize"></i><span class="toolTipText"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="frame ds">
+                    <div class="preview"></div>
+                    <div class="linker">
+                        <div class="loom"><i class="fa-solid fa-video"></i><span class="toolTipText"></span>
+                        </div>
+                        <div class="git"><i class="fa-brands fa-github"></i><span class="toolTipText"></span>
+                        </div>
+                        <div class="blog"><i class="fa-regular fa-window-maximize"></i><span class="toolTipText"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="frame ds">
+                    <div class="preview"></div>
+                    <div class="linker">
+                        <div class="loom"><i class="fa-solid fa-video"></i><span class="toolTipText"></span>
+                        </div>
+                        <div class="git"><i class="fa-brands fa-github"></i><span class="toolTipText"></span>
+                        </div>
+                        <div class="blog"><i class="fa-regular fa-window-maximize"></i><span class="toolTipText"></span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="contact">
-                <h2><span class="hidden">Contacts</span></h2>
-                <div class="navs">
-                    <div class="nav"><a href="mailto:AdeshinaIbrahim10@gmail.com"><i
-                                class="fa-solid fa-envelopes-bulk"></i><span class="hidden">Gmail</span>
-                        </a></div>
-                    <div class="nav"><a href="https://github.com/Usool-Data-Science?tab=repositories"><i
-                                class="fa-brands fa-square-github"></i><span class="hidden">GitHub</span> </a></div>
-                    <div class="nav"><a href="https://stackoverflow.com/users/19386218/adeshina-ibrahim"><i
-                                class="fa-brands fa-stack-overflow"></i><span class="hidden">Stack</span> </a></div>
-                    <div class="nav"><a href="https://web.facebook.com/profile.php?id=100067408721453"><i
-                                class="fa-brands fa-facebook"></i><span class="hidden">Facebook</span> </a></div>
-                    <div class="nav"><a href="https://x.com/adeshin37132916?t=ALmL7IrDkFIvZh_RO5-uJA&s=35"><i
-                                class="fa-brands fa-square-twitter"></i><span class="hidden">Twitter</span> </a></div>
-                    <div class="nav"><a href="#"><i class="fa-brands fa-square-instagram"></i><span
-                                class="hidden">Instagram</span> </a></div>
+        </article>
+
+        <!-- Blogs -->
+        <article class="scroll-section" id="blog">
+            <div class="panels">
+                <ul class="panel-tabs">
+                    <button class="tab active-tab" data-class="fs">FullStack Apps</button>
+                    <button class="tab" data-class="dl">ML/DL</button>
+                    <button class="tab" data-class="ds">Data Science</button>
+                </ul>
+            </div>
+            <div class="kontainer">
+                <div class="frame fs">
+                    <div class="preview">
+                        <img src="static/images/Blog/css tricks flexbox.jpg" alt="Most important CSS flexbox tricks"
+                            class="previewImg">
+                        <span class="previewTitle hidden"></span>
+                    </div>
+                    <div class="linker">
+                        <div class="git" name="Code"><i class="fa-brands fa-github"></i><a
+                                href="https://github.com/thomaspark/flexboxfroggy" target="_blank"><span
+                                    class="toolTipText"></span></a>
+                        </div>
+                        <div class="blog" name="Blog"><i class="fa-regular fa-window-maximize"></i>
+                            <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank"><span
+                                    class="toolTipText"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="frame fs">
+                    <div class="preview">
+                        <img src="static/images/Blog/You-Dont-Know-JS.jpg" alt="You-Dont-Know-JS" class="previewImg">
+                        <span class="previewTitle hidden"></span>
+                    </div>
+                    <div class="linker">
+                        <div class="git" name="Code"><i class="fa-brands fa-github"></i><a
+                                href="https://github.com/getify/You-Dont-Know-JS" target="_blank"><span
+                                    class="toolTipText"></span></a>
+                        </div>
+                        <div class="blog" name="Blog"><i class="fa-regular fa-window-maximize"></i>
+                            <a href="https://coderanch.com/t/663355/languages/Don-JS-series-order" target="_blank"><span
+                                    class="toolTipText"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="frame fs">
+                    <div class="preview">
+                        <img src="static/images/Blog/puppet.jpg" alt="Puppet for server automation" class="previewImg">
+                        <span class="previewTitle hidden"></span>
+                    </div>
+                    <div class="linker">
+                        <div class="git" name="Code"><i class="fa-brands fa-github"></i><a
+                                href="https://github.com/Element84/puppet-docs/tree/master" target="_blank"><span
+                                    class="toolTipText"></span></a>
+                        </div>
+                        <div class="blog" name="Blog"><i class="fa-regular fa-window-maximize"></i>
+                            <a href="https://www.puppet.com/docs/puppet/5.5/cheatsheet_core_types.html"
+                                target="_blank"><span class="toolTipText"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="frame fs">
+                    <div class="preview">
+                        <img src="static/images/Blog/You-Dont-Know-JS.jpg" alt="You-Dont-Know-JS" class="previewImg">
+                        <span class="previewTitle hidden"></span>
+                    </div>
+                    <div class="linker">
+                        <div class="git" name="Code"><i class="fa-brands fa-github"></i><a
+                                href="https://github.com/getify/You-Dont-Know-JS" target="_blank"><span
+                                    class="toolTipText"></span></a>
+                        </div>
+                        <div class="blog" name="Blog"><i class="fa-regular fa-window-maximize"></i>
+                            <a href="https://coderanch.com/t/663355/languages/Don-JS-series-order" target="_blank"><span
+                                    class="toolTipText"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="frame dl">
+                    <div class="preview">
+                        <img src="static/images/Blog/css tricks flexbox.jpg" alt="CSS FLEXBOX" class="previewImg">
+                        <span class="previewTitle hidden"></span>
+                    </div>
+                    <div class="linker">
+                        <div class="git" name="Code"><i class="fa-brands fa-github"></i><a
+                                href="https://github.com/thomaspark/flexboxfroggy" target="_blank"><span
+                                    class="toolTipText"></span></a>
+                        </div>
+                        <div class="blog" name="Blog"><i class="fa-regular fa-window-maximize"></i>
+                            <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank"><span
+                                    class="toolTipText"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="frame dl">
+                    <div class="preview">
+                        <img src="static/images/Blog/You-Dont-Know-JS.jpg" alt="You-Dont-Know-JS" class="previewImg">
+                        <span class="previewTitle hidden"></span>
+                    </div>
+                    <div class="linker">
+                        <div class="git" name="Code"><i class="fa-brands fa-github"></i><a
+                                href="https://github.com/getify/You-Dont-Know-JS" target="_blank"><span
+                                    class="toolTipText"></span></a>
+                        </div>
+                        <div class="blog" name="Blog"><i class="fa-regular fa-window-maximize"></i>
+                            <a href="https://coderanch.com/t/663355/languages/Don-JS-series-order" target="_blank"><span
+                                    class="toolTipText"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="frame dl">
+                    <div class="preview">
+                        <img src="static/images/Blog/puppet.jpg" alt="You-Dont-Know-JS" class="previewImg">
+                        <span class="previewTitle hidden"></span>
+                    </div>
+                    <div class="linker">
+                        <div class="git" name="Code"><i class="fa-brands fa-github"></i><a
+                                href="https://github.com/Element84/puppet-docs/tree/master" target="_blank"><span
+                                    class="toolTipText"></span></a>
+                        </div>
+                        <div class="blog" name="Blog"><i class="fa-regular fa-window-maximize"></i>
+                            <a href="https://www.puppet.com/docs/puppet/5.5/cheatsheet_core_types.html"
+                                target="_blank"><span class="toolTipText"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="frame ds">
+                    <div class="preview">
+                        <img src="static/images/Blog/css tricks flexbox.jpg" alt="CSS FLEXBOX" class="previewImg">
+                        <span class="previewTitle hidden"></span>
+                    </div>
+                    <div class="linker">
+                        <div class="git" name="Code"><i class="fa-brands fa-github"></i><a
+                                href="https://github.com/thomaspark/flexboxfroggy" target="_blank"><span
+                                    class="toolTipText"></span></a>
+                        </div>
+                        <div class="blog" name="Blog"><i class="fa-regular fa-window-maximize"></i>
+                            <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank"><span
+                                    class="toolTipText"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="frame ds">
+                    <div class="preview">
+                        <img src="static/images/Blog/You-Dont-Know-JS.jpg" alt="You-Dont-Know-JS" class="previewImg">
+                        <span class="previewTitle hidden"></span>
+                    </div>
+                    <div class="linker">
+                        <div class="git" name="Code"><i class="fa-brands fa-github"></i><a
+                                href="https://github.com/getify/You-Dont-Know-JS" target="_blank"><span
+                                    class="toolTipText"></span></a>
+                        </div>
+                        <div class="blog" name="Blog"><i class="fa-regular fa-window-maximize"></i>
+                            <a href="https://coderanch.com/t/663355/languages/Don-JS-series-order" target="_blank"><span
+                                    class="toolTipText"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="frame ds">
+                    <div class="preview">
+                        <img src="static/images/Blog/puppet.jpg" alt="You-Dont-Know-JS" class="previewImg">
+                        <span class="previewTitle hidden"></span>
+                    </div>
+                    <div class="linker">
+                        <div class="git" name="Code"><i class="fa-brands fa-github"></i><a
+                                href="https://github.com/Element84/puppet-docs/tree/master" target="_blank"><span
+                                    class="toolTipText"></span></a>
+                        </div>
+                        <div class="blog" name="Blog"><i class="fa-regular fa-window-maximize"></i>
+                            <a href="https://www.puppet.com/docs/puppet/5.5/cheatsheet_core_types.html"
+                                target="_blank"><span class="toolTipText"></span>
+                        </div></a>
+                    </div>
                 </div>
             </div>
-        </div>
+        </article>
+
+        <!-- Skillset -->
+        <article id="skill" class="scroll-section">
+            <div>
+                <p>While I keep improving my skills on daily basis, below are the list of technologies that
+                    I
+                    work with currently:</p>
+            </div>
+            <div class="tech">
+                <div class="tech1 tech-rack"><i class='bx bxl-html5'></i><span>HTML</span></div>
+                <div class="tech2 tech-rack"><i class='bx bxl-css3'></i><span>CSS</span> </div>
+                <div class="tech3 tech-rack"><i class='bx bxl-javascript'></i><span>JavaScript</span> </div>
+                <div class="tech4 tech-rack"><i class='bx bxl-python'></i><span>Python</span> </div>
+                <div class="tech5 tech-rack"><i class='bx bxl-flask'></i><span>Flask</span> </div>
+                <div class="tech6 tech-rack"><i class='bx bxl-django'></i><span>Django</span> </div>
+                <div class="tech7 tech-rack"><i class='bx bxl-nodejs'></i><span>NodeJs</span> </div>
+                <div class="tech8 tech-rack"><i class='bx bxl-react'></i><span>React</span> </div>
+                <div class="tech9 tech-rack"><i class='bx bxl-typescript'></i><span>TypeScript</span> </div>
+                <div class="tech10 tech-rack"><i class='bx bxl-kubernetes'></i></i><span>Kubernetes</span>
+                </div>
+                <div class="tech11 tech-rack"><i class='bx bxl-docker'></i></i><span>Docker</span> </div>
+                <div class="tech12 tech-rack"><i class='bx bxl-graphql'></i><span>Graphql</span> </div>
+            </div>
+            <p class="implementation">
+                As a seasoned software engineer, I specialize in both front-end and back-end development
+                with expertise in HTML, CSS,
+                JavaScript, React, and TypeScript for creating dynamic, user-friendly interfaces. On the
+                server side, I leverage Python
+                with Flask and Django, as well as Node.js and GraphQL, to build robust, scalable APIs. My
+                proficiency in Docker and
+                Kubernetes ensures efficient deployment and scaling of applications, enhancing overall
+                system resilience and delivery
+                speed. In my current role, I integrate these skills to develop comprehensive web
+                applications, streamline workflows, and
+                deliver high-quality, innovative solutions, while maintaining a strong commitment to
+                continuous learning and
+                improvement.
+            </p>
+        </article>
+
+        <!-- Reviews -->
+        <article id="review" class="scroll-section pt-2">
+            <ul class="reviewFrame">
+                <li class="review">
+                    <div><img class="img-l" src="static/images/edgar1.jpg" alt="client Image"></div>
+                    <p>
+                        Their expertise
+                        and attention to detail were evident in every aspect of the project. From the
+                        initial consultation to the final
+                        deployment, they demonstrated a deep understanding of modern web technologies and
+                        best practices. <strong>&#8212; &#8220; <span>Edgar Smith</span> &#8221;
+                            &nbsp; <span class="fi fi-de"></span></strong>
+                    </p>
+                </li>
+                <li class="review">
+                    <div><img class="img-l" src="static/images/ds1.jpg" alt="client Image"></div>
+                    <p>
+                        Their communication was top-notch, and they were always available to answer my
+                        questions and implement my feedback. The
+                        project was completed on time and within budget. I am extremely satisfied with the
+                        service and would definitely hire
+                        them again for future web development projects. <strong>&#8212; &#8220; Adeyemi
+                            Taofeeq
+                            &#8221;
+                            &nbsp; <span class="fi fi-gb"></span></strong>
+                    </p>
+                </li>
+                <li class="review">
+                    <div><img class="img-l" src="static/images/need help.jpg" alt="client Image"></div>
+                    <p>
+                        The developer created a cutting-edge app that not only met all my specifications but
+                        also included innovative features I
+                        hadn't thought of. Their expertise in the latest technologies and user experience
+                        design was impressive, and they were
+                        always open to feedback and suggestions. <strong>&#8212; &#8220; <span>Qk
+                                Zalmi</span> &#8221;
+                            &nbsp; <span class="fi fi-pk"></span></strong>
+                    </p>
+                </li>
+                <li class="review">
+                    <div><img class="img-l" src="static/images/saleem.jpg" alt="client Image"></div>
+                    <p>
+                        They delivered a high-quality, intuitive app that surpassed my expectations. The
+                        development process was smooth, and
+                        they were very communicative. Their ability to integrate
+                        advanced functionalities seamlessly
+                        into the app was particularly impressive. <strong>&#8212; &#8220; Saleem Anwar
+                            &#8221;
+                            &nbsp; <span class="fi fi-au"></span></strong>
+                    </p>
+                </li>
+                <li class="review">
+                    <div><img class="img-l" src="static/images/teresti.jpg" alt="client Image"></div>
+                    <p>
+                        The team brought a high level of expertise in machine learning, which helped us
+                        uncover
+                        valuable insights from our data. Their ability to translate complex data into
+                        actionable strategies was impressive and
+                        has a significant impact on our decision-making processes. <strong>&#8212;
+                            &#8220; <span>Myriam Teresti</span> &#8221;
+                            &nbsp; <span class="fi fi-fr"></span></strong>
+                    </p>
+                </li>
+                <li class="review">
+                    <div><img class="img-l" src="static/images/dad.jpg" alt="client Image"></div>
+                    <p>
+                        They were able to analyze large datasets and provide detailed reports that
+                        highlighted key trends and patterns critical
+                        to our business operations. Their work was meticulous, and they were always
+                        available to explain the findings and answer
+                        any questions. <strong>&#8212; &#8220; Lukumon Adewale &#8221;
+                            &nbsp; <span class="fi fi-us"></span></strong>
+                    </p>
+                </li>
+                <li class="review">
+                    <div><img class="img-l" src="static/images/polyska1.jpg" alt="client Image"></div>
+                    <p>
+                        They demonstrated a profound understanding of complex statistical methods and were
+                        able to explain the results in a
+                        clear and concise manner. Their work significantly enhanced the quality of my
+                        research, and their detailed report made
+                        the review process much smoother. <strong>&#8212; &#8220; <span>Suzanna
+                                Polyanska</span>
+                            &#8221;
+                            &nbsp; <span class="fi fi-my"></span></strong>
+                    </p>
+                </li>
+                <li class="review">
+                    <div><img class="img-l" src="static/images/asekun1.jpg" alt="client Image"></div>
+                    <p>
+                        The analyst was highly knowledgeable, meticulous, and responsive. They provided
+                        insightful interpretations of the data,
+                        which greatly enriched my dissertation. <strong>&#8212; &#8220; Ajibola Asekun
+                            &#8221;
+                            &nbsp; <span class="fi fi-ng"></span></strong>
+                    </p>
+                </li>
+            </ul>
+        </article>
+
+        <!-- Hire Me -->
+        <article id="hire" class="scroll-section pb-3">
+            <h1 class="text-center mb-4">Hire Me</h1>
+            <form action="mailto:adeshinaibrahim10@gmail.com" method="post" enctype="text/plain">
+                <div class="mb-3">
+                    <label for="clientName" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="clientName" name="clientName" required>
+                </div>
+                <div class="mb-3">
+                    <label for="clientEmail" class="form-label">Your Email</label>
+                    <input type="email" class="form-control" id="clientEmail" name="clientEmail" required>
+                </div>
+                <div class="mb-3">
+                    <label for="projectType" class="form-label">Project Type</label>
+                    <select class="form-select" id="projectType" name="projectType" required>
+                        <option value="">Select Project Type</option>
+                        <option value="Web Development">Web Development</option>
+                        <option value="Mobile App Development">Mobile App Development</option>
+                        <option value="Smart App Development">Smart App Development</option>
+                        <option value="DevOps">DevOps</option>
+                        <option value="Other">Others</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="projectDetails" class="form-label">Project Details</label>
+                    <textarea class="form-control" id="projectDetails" name="projectDetails" rows="5"
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn btn-bgHeader">Submit</button>
+                <button type="reset" class="btn btn-danger">Clear</button>
+            </form>
+        </article>
+
     </main>
 
     <!-- Footer Section -->
