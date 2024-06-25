@@ -14,9 +14,11 @@ $font-family-monospace: 'Courier New, monospace';
 $custom-theme-color: (
     "bgBody": #fffed5,
     "fontBody": #333,
-    "bgHeader": #781511,
+    "bgHeader": #10133E,
     "fontHeader": #fdfdfd,
-    "secondaryCol": #db3107
+    "secondaryCol": #242267 // "fontBody": #fcfcfc,
+    // "bgHeader": #781511,
+    // "secondaryCol": #db3107,
 );
 
 $theme-colors: map-merge($custom-theme-color, $theme-colors);
@@ -192,7 +194,7 @@ figure img {
     /* flex: 1 1 200px; */
     width: 15rem;
     height: 250px;
-    background-color: #db3107;
+    background-color: map-get($custom-theme-color, "secondaryCol");
     color: #fff;
     border: 5px solid map-get($custom-theme-color, "bgHeader");
     border-radius: 20%;
@@ -316,7 +318,7 @@ figure img {
 }
 
 .active-tab {
-    background-color: #db3107;
+    background-color: map-get($custom-theme-color, "secondaryCol");
     color: map-get($custom-theme-color, "fontHeader");
 }
 
@@ -327,10 +329,6 @@ figure img {
 
 
 /********  SKILLSETS SECTION ********/
-#skill {
-    padding: 10px;
-}
-
 .tech {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -433,7 +431,6 @@ figure img {
 }
 
 .review {
-    padding: 10px;
     font-style: italic;
     font-weight: 600;
     color: map-get($custom-theme-color, "fontBody");
