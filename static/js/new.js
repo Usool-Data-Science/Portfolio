@@ -1,6 +1,7 @@
 $(document).ready(function () {
     var $tabs = $(".panels .panel-tabs .tab");
     var $linkers = $(".kontainer .frame .linker").children();
+    var $preview = $(".kontainer .frame .preview");
 
     // Function to handle tab switching
     function switchTab($tab) {
@@ -31,6 +32,17 @@ $(document).ready(function () {
     var $activeTab = $(".panels .panel-tabs .tab.active-tab");
     switchTab($activeTab);
 
+    // Blog and Portfolio frame preview
+    $preview.hover(function () {
+        var title = $(this).find(".previewImg").attr("alt");
+        $(this).find(".previewTitle").text(title);
+        $(this).find(".previewImg").toggle();
+        $(this).find(".previewTitle").toggle();
+    }, function () {
+        $(this).find(".previewImg").toggle();
+        $(this).find(".previewTitle").toggle();
+    });
+
     // Linker tooltip config
     $linkers.hover(function () {
         var $toolText = $(this).attr("class");
@@ -41,5 +53,5 @@ $(document).ready(function () {
         // Remove the tooltip
         $(this).find('i').slideToggle();
         $(this).find(".toolTipText").slideToggle();
-    })
+    });
 });
