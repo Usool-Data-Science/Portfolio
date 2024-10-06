@@ -32,18 +32,24 @@ const Project = ({ project }) => {
                             align={"justify"}>
                             {(project.headline).length > 100 ? `${(project.headline).slice(0,)}...` : project.headline}
                         </Text>
+
+                        <Text lineHeight={"2.5rem"} pt={"1rem"} fontSize={"20px"}>
+                            <span style={{ fontWeight: "bolder" }}>Features: </span>
+                            {project.features}
+                        </Text>
+
                     </CardBody>
 
                     <CardFooter style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: "1.5rem", flexWrap: "wrap" }} gap={"3rem"} direction={{ base: 'column', lg: 'row' }} >
                         <Box>
                             <Flex gap={5} alignItems={"center"}>
-                                <span>Tech Stack:</span>
-                                {(project.stack)}
+                                <h2 style={{ fontWeight: "bolder" }}>Tech Stack:</h2>
+                                {project.stack}
                             </Flex>
                         </Box>
                         <Box>
                             <Flex gap={5} alignItems={"center"}>
-                                <span >Links:</span>
+                                <h2 style={{ fontWeight: "bolder" }} >Links:</h2>
                                 <Button variant='ghost' colorScheme='blue'
                                     padding={"5px"}
                                 >

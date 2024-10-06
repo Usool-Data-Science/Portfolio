@@ -36,9 +36,10 @@ export const PROJECTS = [
         link: "https://coders-lodge.onrender.com/",
         thumbnail: "src/Images/coderslodge.PNG",
         headline: "A repository that holds list of my coding pals. It uses react in the frontend and flask framework in the backend to handle all CRUD operations.",
-        loom: "",
+        loom: "https://www.loom.com/share/fa09f21c504e4f129abff357c7ec45d1?sid=7e58272c-b7f3-4dcb-acec-ad65542f48a1",
         github: "https://github.com/Usool-Data-Science/Coders_Lodge",
-        stack: [python, react, linux, flask, javaScript]
+        stack: [python, react, linux, flask, javaScript],
+        features: ["✨API Integration ✨Responsive Frontend ✨Database Persistence"]
     },
     {
         id: 2,
@@ -49,7 +50,8 @@ export const PROJECTS = [
         headline: "An information management system for Economic and Financial Crime Commission, a Nigerian Federal Government parastatal that keep financial and cyber crime records for prosecution.",
         loom: "https://www.loom.com/share/96e804c8816f4d309c023f0b98f288ec?sid=e140bfac-936b-4c16-910d-e291decdb9eb",
         github: "",
-        stack: [docker, python, react, linux, flask, javaScript, puppet, digitalOcean]
+        stack: [docker, python, react, linux, flask, javaScript, puppet, digitalOcean],
+        features: ["✨API Integration ✨Responsive Frontend ✨Database Persistence/Migration ✨User Authentication ✨User Authorization ✨Admin Dashboard ✨Custom CLI"]
     },
     {
         id: 3,

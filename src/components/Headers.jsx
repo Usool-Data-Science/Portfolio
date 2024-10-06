@@ -1,4 +1,4 @@
-import { Avatar, Box, Button, useColorMode, WrapItem } from '@chakra-ui/react';
+import { Avatar, Box, Button, Tooltip, useColorMode, WrapItem } from '@chakra-ui/react';
 import '../index.css';
 import { IoMoon } from 'react-icons/io5';
 import { LuSun } from 'react-icons/lu';
@@ -22,9 +22,11 @@ const Headers = () => {
           <li><a target='_blank' href='https://calendar.app.google/Vcg7ud9XC2kGaPXM9'> Consult </a></li>
         </ul>
       </div>
-      <Button onClick={toggleColorMode}>
-        {colorMode === "light" ? <IoMoon /> : <LuSun size={20} />}
-      </Button>
+      <Tooltip hasArrow label={`Switch to ${colorMode === 'light' ? 'Dark' : 'light'} Mode`} bg='gray.300' color='black' placement='right'>
+        <Button onClick={toggleColorMode}>
+          {colorMode === "light" ? <IoMoon /> : <LuSun size={20} />}
+        </Button>
+      </Tooltip>
     </div>
   )
 }
