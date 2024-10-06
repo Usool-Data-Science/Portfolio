@@ -1,20 +1,16 @@
-import { Container, Stack } from "@chakra-ui/react"
+// import { Container, Stack } from "@chakra-ui/react"
 import Footer from "./Footer"
 import Headers from "./Headers"
-import NavBar from "./NavBar"
+// import NavBar from "./NavBar"
 import { Outlet } from "react-router-dom"
 
-const Layout = ({ value }) => {
+const Layout = () => {
   return (
     <>
-    <Stack minH={"100vh"}>
-      <Container maxWidth={"120px"}>
-        <Headers/>
-        <NavBar value={value}/>
-        <Outlet />
-        <Footer />
-      </Container>
-    </Stack>
+      <Headers />
+      {/* <NavBar /> */}
+      <Outlet />
+      <Footer />
     </>
   )
 }

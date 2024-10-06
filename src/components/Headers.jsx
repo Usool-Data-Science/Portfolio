@@ -1,6 +1,32 @@
+import { Avatar, Box, Button, useColorMode, WrapItem } from '@chakra-ui/react';
+import '../index.css';
+import { IoMoon } from 'react-icons/io5';
+import { LuSun } from 'react-icons/lu';
+
 const Headers = () => {
+  const { colorMode, toggleColorMode } = useColorMode();
   return (
-    <div>Headers</div>
+    <div className="Header">
+      <Box display={{ sm: "none", md: "block" }}>
+        <a href='/#'>
+          <WrapItem>
+            <Avatar name='Adeshina Ibrahim' src='https://www.gravatar.com/avatar/062207723a592652be2a7961bcd34f69' />
+          </WrapItem>
+        </a>
+      </Box>
+      <div className='Navs'>
+        <ul>
+          <li><a href='/'> Home </a></li>
+          <li><a href='/blogs'> Blogs </a></li>
+          <li><a href='/projects'> Projects </a></li>
+          {/* <li><a href='/resume'> Resume </a></li> */}
+          <li><a href='/consult'> Consult </a></li>
+        </ul>
+      </div>
+      <Button onClick={toggleColorMode}>
+        {colorMode === "light" ? <IoMoon /> : <LuSun size={20} />}
+      </Button>
+    </div>
   )
 }
 

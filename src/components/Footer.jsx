@@ -1,6 +1,9 @@
 const Footer = () => {
+  const today = new Date();
   return (
-    <div>Footer</div>
+    <div className="Footer">
+      All rights reserved © Adeshina Ibrahim {today.getFullYear()}
+    </div>
   )
 }
 
