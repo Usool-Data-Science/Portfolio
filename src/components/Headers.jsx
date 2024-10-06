@@ -19,8 +19,7 @@ const Headers = () => {
           <li><a href='/'> Home </a></li>
           <li><a href='/blogs'> Blogs </a></li>
           <li><a href='/projects'> Projects </a></li>
-          {/* <li><a href='/resume'> Resume </a></li> */}
-          <li><a href='/consult'> Consult </a></li>
+          <li><a target='_blank' href='https://calendar.app.google/Vcg7ud9XC2kGaPXM9'> Consult </a></li>
         </ul>
       </div>
       <Button onClick={toggleColorMode}>

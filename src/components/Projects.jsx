@@ -7,16 +7,19 @@ const Projects = ({ searchProject, setSearchProject, projects }) => {
     setSearchProject(e.target.innerText);
   };
   return (
-    <Stack className="Outlet">
-      <Text fontSize={"1.5rem"} mb={"1rem"} align={"justify"}>
+    <Stack>
+      <Text className="Description"
+        style={{
+          fontSize: "1.5rem", margin: "1rem", align: "justify"
+        }}>
         As a dedicated software engineer, I am passionate about transforming ideas into impactful solutions through innovative technology. My experience spans a diverse range of projects, from backend systems to full-stack applications, where I leverage modern frameworks and best practices to deliver efficient, scalable, and user-friendly software. Below are some of my notable projects:
       </Text>
 
       <Card
         direction={{ base: 'column', md: 'row' }}
-        alignItems={"center"}
-        justifyContent={"center"}
-        overflow='hidden'
+        alignItems={"flex-start"}
+        justifyContent={"flex-start"}
+        flexFlow={"wrap"}
         variant='outline'
         alignSelf={"flex-start"}
         mb={"1rem"}

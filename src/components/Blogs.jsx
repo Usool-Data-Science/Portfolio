@@ -7,17 +7,21 @@ const Blogs = ({ searchPost, setSearchPost, blogPosts }) => {
     setSearchPost(e.target.innerText);
   }
   return (
-    <Stack className="Outlet">
-      <Text fontSize={"1.5rem"} mb={"1rem"} align={"justify"}>
+    <Stack >
+      <Text className="Description"
+        style={{
+          fontSize: "1.5rem", margin: "1rem", align: "justify"
+        }}
+      >
         As a technical writer, I frequently write <a target="_blank" href="https://dev.to/usooldatascience" className="blogPost">blog</a> posts on topics that seems confusing to junior developers and refreshers for senior devs.
-        My <a target="_blank" href="https://dev.to/usooldatascience" className="blogPost">blog</a> posts mostly relates to Fullstack development, Python, DevOps, Microservices and APIs.
+        My <a target="_blank" href="https://dev.to/usooldatascience" className="blogPost">blog</a> posts mostly relates to fullstack development, Python, DevOps, Microservices and APIs.
       </Text>
 
       <Card
-        direction={{ base: 'column', sm: 'row' }}
-        alignItems={"center"}
-        justifyContent={"center"}
-        overflow='hidden'
+        direction={{ base: 'column', md: 'row' }}
+        alignItems={"flex-start"}
+        justifyContent={"flex-start"}
+        flexFlow={"wrap"}
         variant='outline'
         alignSelf={"flex-start"}
         mb={"1rem"}
@@ -39,7 +43,6 @@ const Blogs = ({ searchPost, setSearchPost, blogPosts }) => {
       </Card>
 
       <BlogGrid blogPosts={blogPosts} searchPost={searchPost} />
-
     </Stack>
   )
 }

@@ -6,7 +6,7 @@ const Project = ({ project }) => {
     return (
         <>
             <Card
-                direction={{ base: 'column', sm: 'row' }}
+                direction={{ base: 'column', lg: 'row' }}
                 mb={"1rem"}
                 overflow='hidden'
                 variant='outline'
@@ -15,6 +15,7 @@ const Project = ({ project }) => {
                 <Image
                     objectFit='cover'
                     maxW={{ base: '100%', sm: '300px' }}
+                    alignSelf={"center"}
                     src={project.thumbnail}
                     alt='Caffe Latte'
                 />
@@ -33,7 +34,7 @@ const Project = ({ project }) => {
                         </Text>
                     </CardBody>
 
-                    <CardFooter style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: "1.5rem" }} gap={"3rem"} >
+                    <CardFooter style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: "1.5rem", flexWrap: "wrap" }} gap={"3rem"} direction={{ base: 'column', lg: 'row' }} >
                         <Box>
                             <Flex gap={5} alignItems={"center"}>
                                 <span>Tech Stack:</span>

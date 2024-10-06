@@ -4,7 +4,7 @@ const Post = ({ post }) => {
     return (
         <>
             <Card
-                direction={{ base: 'column', sm: 'row' }}
+                direction={{ base: 'column', lg: 'row' }}
                 mb={"1rem"}
                 overflow='hidden'
                 variant='outline'
@@ -13,8 +13,9 @@ const Post = ({ post }) => {
                 <Image
                     objectFit='cover'
                     maxW={{ base: '100%', sm: '300px' }}
+                    alignSelf={"center"}
                     src={post.thumbnail}
-                    alt='Caffe Latte'
+                    alt='post thumbnail'
                 />
 
                 <Stack>
