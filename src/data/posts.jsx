@@ -4,7 +4,7 @@ export const POSTS = [
         title: "How to Start a Flask Application: A Comprehensive Guide",
         datetime: "25-Sep-2024",
         link: "https://dev.to/usooldatascience/how-to-start-a-flask-application-a-comprehensive-guide-29e9",
-        thumbnail: "/Images/nobgflask.png",
+        thumbnail: "/Portfolio/Images/nobgflask.png",
         headline: "If you're like me, you’ve probably seen a few different approaches to starting a Flask application and wondered which one is the best. Sometimes, you’ll encounter manage.py, other times, you'll see create_app. This can lead to confusion, especially if you're new to Flask development or transitioning from one project to another. In this article, I will walk you through the most common methods used to start a Flask application, breaking them down with clear examples so you can decide what works best for your use case."
     },
     {

@@ -4,6 +4,7 @@ import { IoLogoJavascript } from 'react-icons/io5'
 import { BiLogoPostgresql } from 'react-icons/bi'
 import { DiDigitalOcean, DiRedis } from 'react-icons/di'
 import { FcLinux } from 'react-icons/fc'
+import.meta.env
 
 const python = < FaPython size={40} />
 const javaScript = <IoLogoJavascript size={40} />
