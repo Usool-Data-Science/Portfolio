@@ -21,15 +21,15 @@ import { StrictMode } from 'react';
 import { ChakraProvider } from '@chakra-ui/react';
 import { createRoot } from 'react-dom/client';
 import App from './App.jsx';
-import { BrowserRouter } from 'react-router-dom';  // Import BrowserRouter for v6 routing
+import { HashRouter } from 'react-router-dom';  // Import HashRouter for v6 routing
 import './index.css'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <ChakraProvider>
-      <BrowserRouter>
+      <HashRouter>
         <App />
-      </BrowserRouter>
+      </HashRouter>
     </ChakraProvider>
   </StrictMode>
 );
