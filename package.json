@@ -2,7 +2,7 @@
   "name": "newportfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://Usool-Data-Science.github.io/portfolio",
+  "homepage": "https://Usool-Data-Science.github.io/portfolio/",
   "type": "module",
   "scripts": {
     "dev": "vite",

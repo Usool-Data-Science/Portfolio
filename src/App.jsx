@@ -37,12 +37,12 @@ function App() {
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path='/blogs' element={<Blogs
+          <Route path='blogs' element={<Blogs
             searchPost={searchPost}
             setSearchPost={setSearchPost}
             blogPosts={searchResult}
           />} />
-          <Route path='/projects' element={<Projects
+          <Route path='projects' element={<Projects
             searchProject={searchProject}
             setSearchProject={setSearchProject}
             projects={projectResult}
