@@ -107,7 +107,7 @@ const Home = () => (
         <CardHeader>
           <Flex spacing='4'>
             <Flex flex='1' gap='4' alignItems='center' flexWrap='wrap'>
-              <Avatar name='Saleem Anwar' src='src/Images/saleem.jpg' />
+              <Avatar name='Saleem Anwar' src='/Images/saleem.jpg' />
               <Box>
                 <Heading size='sm'>Saleem Anwar</Heading>
                 <Text>Developer, Anwar Globals.</Text>
@@ -126,7 +126,7 @@ const Home = () => (
         <CardHeader>
           <Flex spacing='4'>
             <Flex flex='1' gap='4' alignItems='center' flexWrap='wrap'>
-              <Avatar name='Maryam Teresti' src='src/Images/teresti.jpg' />
+              <Avatar name='Maryam Teresti' src='/Images/teresti.jpg' />
               <Box>
                 <Heading size='sm'>Maryam Teresti</Heading>
                 <Text>Biotechnician, Musoon Health.</Text>
@@ -145,7 +145,7 @@ const Home = () => (
         <CardHeader>
           <Flex spacing='4'>
             <Flex flex='1' gap='4' alignItems='center' flexWrap='wrap'>
-              <Avatar name='Suzzana Polyanska' src='src/Images/polyska1.jpg' />
+              <Avatar name='Suzzana Polyanska' src='/Images/polyska1.jpg' />
               <Box>
                 <Heading size='sm'>Suzzana Polyanska</Heading>
                 <Text>Data Analyst, Redeem Consult.</Text>
@@ -183,7 +183,7 @@ const Home = () => (
         <CardHeader>
           <Flex spacing='4'>
             <Flex flex='1' gap='4' alignItems='center' flexWrap='wrap'>
-              <Avatar name='Edgar Smith' src='src/Images/edgar1.jpg' />
+              <Avatar name='Edgar Smith' src='/Images/edgar1.jpg' />
               <Box>
                 <Heading size='sm'>Edgar Smith</Heading>
                 <Text>CEO, Ladkas Ltd.</Text>
