@@ -77,6 +77,14 @@ export const POSTS = [
         datetime: "12-Sep-2024",
         link: "https://dev.to/usooldatascience/a-quick-guide-to-the-python-multiprocessing-module-with-examples-4hld",
         thumbnail: "Images/multiprocessor2.jpg",
-        headline: "The multiprocessing module in Python allows you to create and manage processes, enabling you to take full advantage of multiple processors on a machine. It helps you achieve parallel execution by using separate memory spaces for each process, unlike threading where threads share the same memory space. Here's a list of commonly used classes and methods in the multiprocessing module with brief examples.."
+        headline: "The multiprocessing module in Python allows you to create and manage processes, enabling you to take full advantage of multiple processors on a machine. It helps you achieve parallel execution by using separate memory spaces for each process, unlike threading where threads share the same memory space. Here's a list of commonly used classes and methods in the multiprocessing module with brief examples."
+    },
+    {
+        id: 11,
+        title: "Deploying a Vite/React Application with Images: A Complete Guide",
+        datetime: "07-Oct-2024",
+        link: "https://dev.to/usooldatascience/deploying-a-vitereact-application-with-images-a-complete-guide-12p3",
+        thumbnail: "Images/vite-react.png",
+        headline: "TDeploying a Vite/React application on GitHub Pages is an exciting milestone, but the process can sometimes come with unexpected challenges, especially when dealing with images and assets. This blog post will walk you through the entire process, from the initial deployment to troubleshooting common problems and arriving at effective solutions."
     },
 ]

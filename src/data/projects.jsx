@@ -1,5 +1,5 @@
 import { FaAws, FaC, FaDocker, FaNodeJs, FaPython, FaReact } from 'react-icons/fa6'
-import { SiD3Dotjs, SiDjango, SiFlask, SiGooglecloud, SiJquery, SiKubernetes, SiMongodb, SiMysql, SiPuppet, SiTensorflow, SiTypescript } from 'react-icons/si'
+import { SiAwselasticloadbalancing, SiCss3, SiD3Dotjs, SiDjango, SiFlask, SiGooglecloud, SiHtml5, SiJquery, SiKubernetes, SiMongodb, SiMysql, SiPuppet, SiTensorflow, SiTypescript } from 'react-icons/si'
 import { IoLogoJavascript } from 'react-icons/io5'
 import { BiLogoPostgresql } from 'react-icons/bi'
 import { DiDigitalOcean, DiRedis } from 'react-icons/di'
@@ -28,6 +28,9 @@ const docker = <FaDocker />
 const kubernetes = <SiKubernetes />
 const puppet = <SiPuppet />
 const digitalOcean = <DiDigitalOcean />
+const html = <SiHtml5 />
+const css = <SiCss3 />
+const loadbalancer = <SiAwselasticloadbalancing />
 
 export const PROJECTS = [
     {
@@ -47,7 +50,7 @@ export const PROJECTS = [
         title: "EFCC Information Management System",
         datetime: "16-March-2024",
         link: "",
-        thumbnail: "Images/python1.png",
+        thumbnail: "Images/efcc.png",
         headline: "An information management system for Economic and Financial Crime Commission, a Nigerian Federal Government parastatal that keep financial and cyber crime records for prosecution.",
         loom: "https://www.loom.com/share/96e804c8816f4d309c023f0b98f288ec?sid=e140bfac-936b-4c16-910d-e291decdb9eb",
         github: "",
@@ -56,12 +59,14 @@ export const PROJECTS = [
     },
     {
         id: 3,
-        title: "Project 3",
-        datetime: "16-Sep-2024",
+        title: "AirBnB Minified",
+        datetime: "03-Mar-2024",
         link: "https://dev.to/usooldatascience/mastering-closures-and-decorators-in-python-from-basics-to-advanced-16o",
-        thumbnail: "Images/python2.webp",
-        headline: "Closures and decorators are powerful features in Python that allow you to write more flexible and reusable code. Understanding these concepts will take your Python skills to the next level, allowing you to handle more complex scenarios like logging, access control, and memoization with ease.",
+        thumbnail: "Images/airbnb.png",
+        headline: "A scalable AirBnB application built for client to lease a comfortable home for a fixed period of time.",
         loom: "",
-        github: ""
+        github: "",
+        stack: [html, css, javaScript, python, linux, flask, puppet, loadbalancer, digitalOcean],
+        features: ["✨Auto-scaling ✨API Integration ✨Responsive Frontend ✨Database Persistence/Migration ✨User Authentication ✨User Authorization ✨Admin Dashboard ✨Custom CLI"]
     },
 ]
