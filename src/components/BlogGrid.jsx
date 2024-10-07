@@ -1,3 +1,4 @@
+import React from "react"
 import Notfound from "./Notfound"
 import Post from "./Post"
 
