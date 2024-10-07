@@ -2,6 +2,7 @@ import { Avatar, Box, Button, Tooltip, useColorMode, WrapItem } from '@chakra-ui
 import '../index.css';
 import { IoMoon } from 'react-icons/io5';
 import { LuSun } from 'react-icons/lu';
+import { Link } from 'react-router-dom';
 
 const Headers = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -16,10 +17,10 @@ const Headers = () => {
       </Box>
       <div className='Navs'>
         <ul>
-          <li><a href='/'> Home </a></li>
-          <li><a href='/blogs'> Blogs </a></li>
-          <li><a href='/projects'> Projects </a></li>
-          <li><a target='_blank' href='https://calendar.app.google/Vcg7ud9XC2kGaPXM9'> Consult </a></li>
+          <li><Link to='/'> Home </Link></li>
+          <li><Link to='/blogs'> Blogs </Link></li>
+          <li><Link to='/projects'> Projects </Link></li>
+          <li><a href='https://calendar.app.google/Vcg7ud9XC2kGaPXM9' > Consult </a></li>
         </ul>
       </div>
       <Tooltip hasArrow label={`Switch to ${colorMode === 'light' ? 'Dark' : 'light'} Mode`} bg='gray.300' color='black' placement='right'>
