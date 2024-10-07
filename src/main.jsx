@@ -27,7 +27,7 @@ import './index.css'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <ChakraProvider>
-      <BrowserRouter basename='/Usool-Data-Science/'>
+      <BrowserRouter>
         <App />
       </BrowserRouter>
     </ChakraProvider>

@@ -1,3 +1,4 @@
+import React from 'react'
 import { Avatar, Box, Button, Card, CardBody, CardHeader, Flex, Grid, Heading, Stack, Text, Tooltip } from '@chakra-ui/react'
 import '../index.css'
 import { FaAws, FaC, FaDocker, FaLinkedin, FaNodeJs, FaPython, FaReact, FaSquareGithub, FaStackOverflow } from 'react-icons/fa6'
