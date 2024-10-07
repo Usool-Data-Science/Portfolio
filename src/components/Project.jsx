@@ -3,6 +3,7 @@ import { FaExternalLinkAlt, FaGithubSquare } from "react-icons/fa"
 import { SiLoom } from "react-icons/si"
 
 const Project = ({ project }) => {
+    const BASE_URL = import.meta.env.BASE_URL;
     return (
         <>
             <Card
@@ -16,7 +17,7 @@ const Project = ({ project }) => {
                     objectFit='cover'
                     maxW={{ base: '100%', sm: '300px' }}
                     alignSelf={"center"}
-                    src={project.thumbnail}
+                    src={BASE_URL + project.thumbnail}
                     alt='Caffe Latte'
                 />
 
