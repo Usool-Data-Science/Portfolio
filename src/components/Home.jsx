@@ -7,6 +7,7 @@ import { BiLogoPostgresql } from 'react-icons/bi'
 import { DiRedis } from 'react-icons/di'
 import { FcLinux } from 'react-icons/fc'
 import { FaFilePdf } from 'react-icons/fa'
+const BASE_URL = import.meta.env.BASE_URL;
 
 const Home = () => (
   <Stack className="Outlet">
@@ -107,7 +108,7 @@ const Home = () => (
         <CardHeader>
           <Flex spacing='4'>
             <Flex flex='1' gap='4' alignItems='center' flexWrap='wrap'>
-              <Avatar name='Saleem Anwar' src='/Images/saleem.jpg' />
+              <Avatar name='Saleem Anwar' src={BASE_URL + 'Images/saleem.jpg'} />
               <Box>
                 <Heading size='sm'>Saleem Anwar</Heading>
                 <Text>Developer, Anwar Globals.</Text>
@@ -126,7 +127,7 @@ const Home = () => (
         <CardHeader>
           <Flex spacing='4'>
             <Flex flex='1' gap='4' alignItems='center' flexWrap='wrap'>
-              <Avatar name='Maryam Teresti' src='/Images/teresti.jpg' />
+              <Avatar name='Maryam Teresti' src={BASE_URL + 'Images/teresti.jpg'} />
               <Box>
                 <Heading size='sm'>Maryam Teresti</Heading>
                 <Text>Biotechnician, Musoon Health.</Text>
@@ -145,7 +146,7 @@ const Home = () => (
         <CardHeader>
           <Flex spacing='4'>
             <Flex flex='1' gap='4' alignItems='center' flexWrap='wrap'>
-              <Avatar name='Suzzana Polyanska' src='/Images/polyska1.jpg' />
+              <Avatar name='Suzzana Polyanska' src={BASE_URL + 'Images/polyska1.jpg'} />
               <Box>
                 <Heading size='sm'>Suzzana Polyanska</Heading>
                 <Text>Data Analyst, Redeem Consult.</Text>
@@ -183,7 +184,7 @@ const Home = () => (
         <CardHeader>
           <Flex spacing='4'>
             <Flex flex='1' gap='4' alignItems='center' flexWrap='wrap'>
-              <Avatar name='Edgar Smith' src='/Images/edgar1.jpg' />
+              <Avatar name='Edgar Smith' src={BASE_URL + 'Images/edgar1.jpg'} />
               <Box>
                 <Heading size='sm'>Edgar Smith</Heading>
                 <Text>CEO, Ladkas Ltd.</Text>

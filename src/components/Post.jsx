@@ -2,7 +2,6 @@ import { Button, Card, CardBody, CardFooter, Heading, Image, Stack, Text } from 
 
 const Post = ({ post }) => {
     const BASE_URL = import.meta.env.BASE_URL;
-    console.log(BASE_URL)
     return (
         <>
             <Card
