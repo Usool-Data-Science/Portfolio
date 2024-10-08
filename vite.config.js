@@ -5,6 +5,9 @@ export default defineConfig(({ mode }) => {
   return {
     base: mode === 'production' ? '/portfolio/' : './',  // Use 'mode' from the config context
     plugins: [react()],
+    server: {
+      port: 3000,
+    }
   }
 })
 

@@ -68,7 +68,7 @@ export const POSTS = [
         title: "Understanding Threading and Multiprocessing in Python: A Comprehensive Guide",
         datetime: "12-Sep-2024",
         link: "https://dev.to/usooldatascience/mastering-pythons-argparse-a-comprehensive-guide-for-beginners-48fn",
-        thumbnail: "Images/multiprocessor.jpg",
+        thumbnail: "Images/threading.png",
         headline: "In Python, the concepts of threading and multiprocessing are often discussed when optimizing applications for performance, especially when they involve concurrent or parallel execution. Despite the overlap in terminology, these two approaches are fundamentally different. This blog will help clarify the confusion around threading and multiprocessing, explain when to use each, and provide relevant examples for each concept."
     },
     {
@@ -76,15 +76,31 @@ export const POSTS = [
         title: "A Quick Guide to the Python multiprocessing Module with Examples",
         datetime: "12-Sep-2024",
         link: "https://dev.to/usooldatascience/a-quick-guide-to-the-python-multiprocessing-module-with-examples-4hld",
-        thumbnail: "Images/multiprocessor2.jpg",
+        thumbnail: "Images/multiprocessor.png",
         headline: "The multiprocessing module in Python allows you to create and manage processes, enabling you to take full advantage of multiple processors on a machine. It helps you achieve parallel execution by using separate memory spaces for each process, unlike threading where threads share the same memory space. Here's a list of commonly used classes and methods in the multiprocessing module with brief examples."
     },
     {
         id: 11,
+        title: "JavaScript Data Structures Cheat Sheet: Arrays, Typed Arrays, Sets, Maps, and WeakMaps (with Python Equivalents)",
+        datetime: "08-Oct-2024",
+        link: "https://dev.to/usooldatascience/javascript-data-structures-cheat-sheet-arrays-typed-arrays-sets-maps-and-weakmaps-with-python-equivalents-ekf",
+        thumbnail: "Images/python-js.png",
+        headline: "Suppose you are a full-stack dev and know your way around the Python and JavaScript ecosystem. In that case, you should understand that Python and JavaScript’s core data structures are crucial for writing efficient code. Many of these structures have close parallels in both ecosystems which makes the transition easier. In this post, we’ll explore JavaScript's Arrays, Typed Arrays, Sets, Maps, and WeakMaps, alongside their Python equivalents, with examples in both languages to highlight the similarities and differences."
+    },
+    {
+        id: 12,
         title: "Deploying a Vite/React Application with Images: A Complete Guide",
         datetime: "07-Oct-2024",
         link: "https://dev.to/usooldatascience/deploying-a-vitereact-application-with-images-a-complete-guide-12p3",
         thumbnail: "Images/vite-react.png",
-        headline: "TDeploying a Vite/React application on GitHub Pages is an exciting milestone, but the process can sometimes come with unexpected challenges, especially when dealing with images and assets. This blog post will walk you through the entire process, from the initial deployment to troubleshooting common problems and arriving at effective solutions."
+        headline: "Deploying a Vite/React application on GitHub Pages is an exciting milestone, but the process can sometimes come with unexpected challenges, especially when dealing with images and assets. This blog post will walk you through the entire process, from the initial deployment to troubleshooting common problems and arriving at effective solutions."
+    },
+    {
+        id: 13,
+        title: "A Comprehensive Collection of Mathematical Symbols and their title.",
+        datetime: "08-Oct-2024",
+        link: "https://dev.to/usooldatascience/a-comprehensive-list-of-mathematical-symbols-and-their-title-10b",
+        thumbnail: "Images/maths.webp",
+        headline: "While I have transitioned completely into software development and computer science, I recall my background in Statistics and the wealth of mathematical jargon I encountered along the way. Below is a comprehensive collection of mathematical symbols, organized by category for your perusal:."
     },
 ]

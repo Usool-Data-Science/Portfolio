@@ -10,7 +10,7 @@ import { FaFilePdf } from 'react-icons/fa'
 const BASE_URL = import.meta.env.BASE_URL;
 
 const Home = () => (
-  <Stack className="Outlet">
+  <Stack>
     <Flex flexFlow={{ base: "column", lg: "row" }} justifyContent={"center"}
       alignItems={"center"} m={5} gap={10}>
       <Box className='Name'>
@@ -100,6 +100,7 @@ const Home = () => (
         md: "repeat(2, 1fr)",
         lg: "repeat(3, 1fr)",
       }}
+      justifyContent={"center"}
       gap={4}
       mx={5}
       mb={7}
