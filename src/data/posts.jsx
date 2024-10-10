@@ -101,6 +101,14 @@ export const POSTS = [
         datetime: "08-Oct-2024",
         link: "https://dev.to/usooldatascience/a-comprehensive-list-of-mathematical-symbols-and-their-title-10b",
         thumbnail: "Images/maths.webp",
-        headline: "While I have transitioned completely into software development and computer science, I recall my background in Statistics and the wealth of mathematical jargon I encountered along the way. Below is a comprehensive collection of mathematical symbols, organized by category for your perusal:."
+        headline: "While I have transitioned completely into software development and computer science, I recall my background in Statistics and the wealth of mathematical jargon I encountered along the way. Below is a comprehensive collection of mathematical symbols, organized by category for your perusal:"
+    },
+    {
+        id: 14,
+        title: "Summarizing the Key Software Design Patterns: A Complete Guide.",
+        datetime: "10-Oct-2024",
+        link: "https://dev.to/usooldatascience/summarizing-the-key-software-design-patterns-a-complete-guide-bf1",
+        thumbnail: "Images/design.png",
+        headline: "In software engineering, there are numerous design patterns, but they are generally classified into three main categories based on the Gang of Four (GoF) classification. The GoF book, Design Patterns: Elements of Reusable Object-Oriented Software, introduced 23 classic design patterns, which are widely referenced in software development. In this post, I’ll walk through these categories, explain what each pattern is, when to use it, and their pros and cons. I’ll also relate each pattern to real-life examples so that it’s easy to understand, even for those new to the field.."
     },
 ]
